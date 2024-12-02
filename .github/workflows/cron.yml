@@ -1,8 +1,9 @@
 name: Cypress Tests
 
-on:
-  schedule:
-    - cron: "*/15 * * * *"
+on: push
+#on: //plánování probíhání testů každých 15 minut
+  #schedule:
+   # - cron: "*/15 * * * *"
 
 jobs:
   cypress-run:
